@@ -11,7 +11,7 @@ This Python project aims to solve electric circuits using mesh analysis, a commo
 
 ## Requirements
 
-- Python 3.x
+- Python 3.11
 - NumPy
 - SciPy
 - NetworkX
@@ -22,7 +22,7 @@ This Python project aims to solve electric circuits using mesh analysis, a commo
 To use the electric circuit solver, follow these steps:
 
 1. Clone the repository to your local machine.
-2. Install the required dependencies using pip:
+2. Install the required dependencies using pip (yet to be implemented):
 
 ```
 pip install -r requirements.txt
@@ -40,7 +40,9 @@ pip install -r requirements.txt
 Here's a simple example of how to use the electric circuit solver:
 
 ```python
-from circuit_solver import Node, Edge, Nodes, Edges, Circuit, draw
+from circuit_solver import Node, Edge, Nodes, Edges, Circuit
+from analysis import draw
+import matplotlib.pyplot as plt
 
 # Define the nodes
 n0 = Node()
@@ -63,6 +65,7 @@ circuit.solve()
 
 # Visualize the circuit and currents
 draw(circuit)
+plt.show()
 ```
 
 ## Contributing
