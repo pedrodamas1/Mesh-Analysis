@@ -2,6 +2,8 @@
 
 This Python project aims to solve electric circuits using mesh analysis, a common technique used in electrical engineering to analyze complex circuits with multiple loops or meshes. The solver leverages principles of graph theory, object-oriented programming, and linear algebra to efficiently compute the currents flowing through each mesh in the circuit.
 
+![](data/circuit.png)
+
 ## Features
 
 - Mesh analysis implementation to solve resistor circuits.
