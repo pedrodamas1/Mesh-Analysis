@@ -15,6 +15,11 @@ class Node:
         """
         self.__dict__.update(kwargs)
 
+    @property
+    def name(self) -> str:
+        """Return the class name as a string."""
+        return self.__class__.__name__
+
     def __str__(self) -> str:
         """Return a string representation of the node."""
         return f"{type(self).__name__}: {self.__dict__}"
@@ -39,6 +44,11 @@ class Edge:
         self.tail: Node = tail
         self.head: Node = head
         self.__dict__.update(kwargs)
+
+    @property
+    def name(self) -> str:
+        """Return the class name as a string."""
+        return self.__class__.__name__
 
     def __len__(self) -> int:
         """Return the number of nodes in the edge (always 2 for directed edge)."""
