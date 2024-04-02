@@ -224,9 +224,6 @@ def draw(graph: Graph, ax: plt.Axes = None,
         labels = dict(zip(graph.edges, vals))
         nx.draw_networkx_edge_labels(G, pos=pos, edge_labels=labels, ax=ax)
 
-    # Show the plot
-    plt.show()
-
 
 if __name__ == '__main__':
     # Example usage
